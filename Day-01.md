@@ -14,8 +14,6 @@ Think of AWS like a huge city:
 
 Every DevOps engineer uses these services frequently.
 
----
-
 ## Step 1 — Check your AWS Region
 
 Look at the top-right corner of the AWS Console.
@@ -35,9 +33,7 @@ For example:
 
 > Asia Pacific (Mumbai)
 
-**Don't change it yet.**
-
----
+Don't change it yet.
 
 ## Step 2 — Open AWS CloudShell
 
@@ -63,8 +59,6 @@ Then open it.
 
 It may take 1–2 minutes the first time because AWS needs to prepare your environment.
 
----
-
 ## What is CloudShell?
 
 CloudShell is simply:
@@ -74,8 +68,6 @@ CloudShell is simply:
 So instead of installing Linux on your laptop, you'll use this cloud-based Linux terminal.
 
 This is one of the reasons I suggested a cloud-first approach for you.
-
----
 
 ## AWS CloudShell + Linux
 
@@ -89,8 +81,6 @@ CloudShell is a Linux machine running in AWS. Everything you learn here will lat
 - EC2
 - DevOps interviews
 
----
-
 ## Rule for our learning
 
 Don't just copy commands.
@@ -101,8 +91,6 @@ For every command, understand:
 - Why we use it
 - When we use it in real projects
 
----
-
 ## Commands
 
 - `pwd` = Print Working Directory (Where am I inside this Linux computer?)
@@ -110,10 +98,6 @@ For every command, understand:
 - `whoami` = "Who am I?" (Linux will tell you the current logged-in user.)
 - `date` = This shows the current system date and time.
 - `clear` = This clears the terminal screen.
-
----
-
-## Command Reference
 
 | Command | Meaning | Purpose |
 | -------- | ------- | ------- |
