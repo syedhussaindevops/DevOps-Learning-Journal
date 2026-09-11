@@ -1,6 +1,4 @@
-# Lesson 3
-
-## Linux File Management
+# Lesson 3 : Linux File Management
 
 Today we're going to learn how to create, copy, move, rename, and delete files and folders.
 
