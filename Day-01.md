@@ -1,110 +1,98 @@
-AWS DevOps Learning — Day 01
-Lesson 1: Understanding the AWS Console
+# AWS DevOps Learning — Day 01
 
-Before creating any AWS resources, it's important to understand the AWS Management Console and the services that DevOps engineers use frequently.
+## Lesson 1: Understanding the AWS Console
 
-AWS Services — Simple Explanation
+Before creating anything, I first learned about the **AWS Management Console** and some of the AWS services commonly used by DevOps engineers.
 
-Think of AWS like a huge city, where each service has a specific purpose:
+### AWS Services — Simple Explanation
 
-AWS Service	What It Is
-EC2	Virtual Computers
-S3	Cloud Storage
-IAM	Users and Permissions
-VPC	Private Network
-RDS	Managed Databases
-CloudWatch	Monitoring and Logging
-CloudShell	Linux Terminal in the Browser
+Think of AWS like a huge city where every service has a specific purpose:
 
-These services are commonly used in real-world DevOps environments.
+| AWS Service | What It Is |
+|---|---|
+| **EC2** | Virtual Computers |
+| **S3** | Cloud Storage |
+| **IAM** | Users and Permissions |
+| **VPC** | Private Network |
+| **RDS** | Databases |
+| **CloudWatch** | Monitoring |
+| **CloudShell** | Linux Terminal in the Browser |
 
-Step 1 — Check Your AWS Region
+---
 
-The first thing to check when working with AWS is the Region.
+## Step 1 — Check Your AWS Region
 
-Look at the top-right corner of the AWS Console.
+The first thing to check when working with AWS is the **Region**.
 
-You may see regions such as:
+The Region can be found in the **top-right corner** of the AWS Console.
 
-Asia Pacific (Mumbai)
-Asia Pacific (Hyderabad)
-US East (N. Virginia)
-Europe (Frankfurt)
-Why is the AWS Region important?
+Examples of AWS Regions:
+
+- Asia Pacific (Mumbai)
+- Asia Pacific (Hyderabad)
+- US East (N. Virginia)
+- Europe (Frankfurt)
+
+### Why is the AWS Region important?
 
 AWS resources are created inside a specific geographical region.
 
-For example:
+The selected Region can affect:
 
-EC2 Instance
-      ↓
-AWS Region
-      ↓
-Asia Pacific (Mumbai)
+- Resource availability
+- Latency
+- Pricing
+- Data location
+- Service availability
 
+> **Important:** Don't change the Region yet. First understand which Region is currently selected.
 
-The region you select can affect:
+### My Current AWS Region
 
-Resource availability
-Latency
-Pricing
-Data location
-Service availability
-
-Learning rule: Don't change the region yet. First understand which region is currently selected.
-
-My Current AWS Region
+```text
 Region: __________________________
 
 Step 2 — Open AWS CloudShell
+AWS CloudShell will be my first Linux environment.
 
-AWS CloudShell will be our first Linux environment.
-
-There are two ways to open it.
+There are two ways to open CloudShell.
 
 Option 1 — From the AWS Console
-
 Look at the bottom-left area of the AWS Console and click:
 
 CloudShell
 
-Option 2 — Using AWS Search
-
+Option 2 — Using the AWS Search Bar
 Use the AWS search bar at the top and search for:
 
 CloudShell
 
-
 Then open AWS CloudShell.
 
-The first time you open CloudShell, AWS may take a minute or two to prepare the environment.
+The first time CloudShell is opened, AWS may take a minute or two to prepare the environment.
 
 What is AWS CloudShell?
+AWS CloudShell is a browser-based Linux terminal provided by AWS.
 
-AWS CloudShell is a browser-based terminal provided by AWS.
+It allows us to use a Linux shell directly from the AWS Console without installing Linux on our local computer.
 
-It gives us a Linux shell directly inside the AWS Console.
+A simple way to understand it:
 
-Instead of installing Linux on our local computer, we can use CloudShell to practice Linux commands and interact with AWS.
-
-A simple way to think about it:
-
-Your Browser
-     │
-     ▼
+My Browser
+     |
+     v
 AWS Console
-     │
-     ▼
+     |
+     v
 AWS CloudShell
-     │
-     ▼
+     |
+     v
 Linux Terminal
 
 AWS CloudShell + Linux
+Learning Linux through CloudShell will help me later when working with various DevOps tools and technologies.
 
-Learning Linux through CloudShell will be useful later when working with many DevOps tools and technologies.
-
-The Linux skills we learn here will help with:
+The Linux skills learned here will be useful for:
 
 Jenkins
 Docker
@@ -114,43 +102,32 @@ Ansible
 EC2
 DevOps automation
 DevOps interviews
-
-Linux is one of the fundamental skills for a DevOps engineer.
-
-Rule for Our Learning
-
+Rule for My Learning
 Don't just copy commands. Understand what every command does.
 
-For every command, ask three questions:
+For every command, I should understand:
 
 What does it do?
 Why do we use it?
-When would we use it in a real project?
-
-This will help us build actual understanding instead of simply memorizing commands.
+When do we use it in real-world projects?
+The goal is to build understanding, not just memorize commands.
 
 Basic Linux Commands
-
-We will start with five simple Linux commands.
+Today I learned five basic Linux commands.
 
 1. pwd
 Meaning
-
 Print Working Directory
 
 Purpose
+Shows the directory/location where I am currently working.
 
-Shows the directory/location where you are currently working.
-
-Example:
-
+Example
 pwd
-
 
 Possible output:
 
 /home/cloudshell-user
-
 
 Think of it as asking Linux:
 
@@ -158,17 +135,13 @@ Think of it as asking Linux:
 
 2. ls
 Meaning
-
 List
 
 Purpose
-
 Shows the files and folders inside the current directory.
 
-Example:
-
+Example
 ls
-
 
 Possible output:
 
@@ -176,60 +149,49 @@ file1.txt
 projects
 scripts
 
-
 Think of it as asking Linux:
 
 "What is inside this folder?"
 
 3. whoami
 Meaning
-
 Who am I?
 
 Purpose
-
 Shows the current Linux user.
 
-Example:
-
+Example
 whoami
-
 
 Possible output:
 
 cloudshell-user
 
-
-This is useful for understanding which user account is currently executing commands.
+This helps us understand which user account is currently executing commands.
 
 4. date
 Meaning
-
 Displays the current system date and time.
 
-Example:
-
+Example
 date
-
 
 Possible output:
 
 Fri Sep 11 12:51:00 UTC 2026
 
-
-The exact output will depend on the environment and system configuration.
+The exact output may be different depending on the environment and system configuration.
 
 5. clear
 Meaning
-
 Clears the terminal screen.
 
-Example:
-
+Example
 clear
 
+This does not delete files or remove anything from the system.
 
-This does not delete your files or commands. It simply clears the visible terminal output.
+It simply clears the visible terminal output.
 
 Linux Commands — Quick Reference
 Command	Meaning	Purpose
@@ -238,9 +200,9 @@ ls	List	Shows files and folders
 whoami	Current User	Shows the logged-in Linux user
 date	Date/Time	Displays the current system date and time
 clear	Clear Terminal	Clears the terminal screen
-Practice
 
-Run the following commands one by one in AWS CloudShell:
+Practice
+I ran the following commands in AWS CloudShell:
 
 pwd
 ls
@@ -248,16 +210,14 @@ whoami
 date
 clear
 
-
-Try to understand the output of each command rather than simply copying it.
+Instead of just copying the commands, I focused on understanding what each command does and why it is useful.
 
 Key Takeaways
-
 Today I learned:
 
 What the AWS Management Console is.
 What an AWS Region is.
-Why the AWS Region matters.
+Why the AWS Region is important.
 What AWS CloudShell is.
 How CloudShell provides a Linux terminal in the browser.
 Basic Linux commands.
@@ -279,7 +239,6 @@ Day 01 Progress
  Ran clear
  Understood what each command does
 Next Step
-
-Continue building Linux fundamentals and gradually connect these Linux concepts with AWS and DevOps tools.
+Continue learning Linux fundamentals and gradually connect these Linux concepts with AWS and DevOps tools.
 
 Goal: Understand first. Automate later. 🚀
