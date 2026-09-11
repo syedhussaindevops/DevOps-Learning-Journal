@@ -2,23 +2,21 @@
 
 Imagine Linux is like your house.
 
-- 🏠 Home = Your home directory
-- 📁 Directory = A folder
-- 📄 File = A document
+🏠 Home = Your home directory  
+📁 Directory = A folder  
+📄 File = A document
 
 Today we'll learn how to create folders, move between them, create files, and read file contents.
 
----
+## Command
 
-## `mkdir`
+mkdir
 
 ### What does it mean?
 
-`mkdir` = Make Directory
+mkdir = Make Directory
 
 It creates a new folder.
-
-### Example
 
 ```bash
 mkdir DevOps
@@ -38,14 +36,12 @@ cd = Change Directory
 
 It lets you move into another folder.
 
-Example
 cd DevOps
 
 touch
 What does it mean?
 Creates an empty file.
 
-Example
 touch notes.txt
 
 Real-world use
@@ -56,6 +52,7 @@ Dockerfile
 Jenkinsfile
 deployment.yaml
 terraform.tf
+
 cat
 What does it mean?
 cat = Concatenate
@@ -82,3 +79,10 @@ cd	Move into a folder
 touch	Create a file
 echo	Print or write text
 cat	Display file contents
+
+Q: What is the difference between mkdir and touch?
+Answer:
+
+mkdir creates a directory (folder).
+
+touch creates an empty file
