@@ -1,25 +1,25 @@
-📚 Lesson 2: Linux Directories & Files
+# 📚 Lesson 2: Linux Directories & Files
 
 Imagine Linux is like your house.
 
-🏠 Home = Your home directory
-📁 Directory = A folder
+🏠 Home = Your home directory  
+📁 Directory = A folder  
 📄 File = A document
 
 Today we'll learn how to create folders, move between them, create files, and read file contents.
 
-Command
+## Command
 mkdir
-What does it mean?
 
+### What does it mean?
 mkdir = Make Directory
 
 It creates a new folder.
 
+```bash
 mkdir DevOps
 
 Real-world use
-
 You create folders to organize projects:
 
 Projects
@@ -30,7 +30,6 @@ Projects
 
 cd
 What does it mean?
-
 cd = Change Directory
 
 It lets you move into another folder.
@@ -39,13 +38,11 @@ cd DevOps
 
 touch
 What does it mean?
-
 Creates an empty file.
 
 touch notes.txt
 
 Real-world use
-
 DevOps engineers create files such as:
 
 README.md
@@ -56,22 +53,22 @@ terraform.tf
 
 cat
 What does it mean?
-
 cat = Concatenate
 
 For now, think of it as:
 
-"Show me what's inside a file.
+"Show me what's inside a file."
 
 cat notes.txt
 
 Since the file is empty, nothing will be displayed.
 
 echo
-
 echo prints text.
+
 echo "Hello DevOps"
 
+Command Reference
 Command	Purpose
 mkdir	Create a folder
 cd	Move into a folder
@@ -80,8 +77,7 @@ echo	Print or write text
 cat	Display file contents
 
 Q: What is the difference between mkdir and touch?
-
 Answer:
-
 mkdir creates a directory (folder).
+
 touch creates an empty file.
