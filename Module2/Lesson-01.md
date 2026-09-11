@@ -1,4 +1,4 @@
-# Module 2 – Git Fundamentals (Lesson 1)
+# Lesson 1 – Git Fundamentals
 
 ## 🤔 Imagine This Scenario
 
