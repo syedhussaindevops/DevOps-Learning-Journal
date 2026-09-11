@@ -1,4 +1,4 @@
-# 📚 Lesson 2: Linux Directories & Files
+# Lesson 2: Linux Directories & Files
 
 Imagine Linux is like your house.
 
