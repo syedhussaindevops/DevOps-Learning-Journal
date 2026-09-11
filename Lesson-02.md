@@ -23,82 +23,62 @@ It creates a new folder.
 ```bash
 mkdir DevOps
 
-## Real-world use
-
+Real-world use
 You create folders to organize projects:
 
-```text
 Projects
 ├── Jenkins
 ├── Docker
 ├── Kubernetes
 └── Terraform
 
-## cd
-
-### What does it mean?
-
+cd
+What does it mean?
 cd = Change Directory
 
 It lets you move into another folder.
 
-### Example
-
-```bash
+Example
 cd DevOps
 
-## touch
-
-### What does it mean?
-
+touch
+What does it mean?
 Creates an empty file.
 
-### Example
-
-```bash
+Example
 touch notes.txt
 
-## Real-world use
-
+Real-world use
 DevOps engineers create files such as:
 
-- README.md
-- Dockerfile
-- Jenkinsfile
-- deployment.yaml
-- terraform.tf
-
-## cat
-
-### What does it mean?
-
+README.md
+Dockerfile
+Jenkinsfile
+deployment.yaml
+terraform.tf
+cat
+What does it mean?
 cat = Concatenate
 
 For now, think of it as:
 
 "Show me what's inside a file."
 
-### Example
-
-```bash
+Example
 cat notes.txt
+
 Since the file is empty, nothing will be displayed.
 
-## echo
-
+echo
 echo prints text.
 
-### Example
-
-```bash
+Example
 echo "Hello DevOps"
 
-## Command Reference
-
-| Command | Purpose |
-|---|---|
-| `mkdir` | Create a folder |
-| `cd` | Move into a folder |
-| `touch` | Create a file |
-| `echo` | Print or write text |
-| `cat` | Display file contents |
+Command Reference
+Command	Purpose
+mkdir	Create a folder
+cd	Move into a folder
+touch	Create a file
+echo	Print or write text
+cat	Display file contents
