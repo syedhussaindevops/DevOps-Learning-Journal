@@ -1,5 +1,3 @@
-# Module 2 – Git Fundamentals
-
 ## Lesson 2 – git status, git add, git commit, git log
 
 Today you'll understand the 4 most important Git commands.
